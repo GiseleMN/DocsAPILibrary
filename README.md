@@ -1,5 +1,18 @@
 # LivrariAPI
 
+### Projeto LivrariaApi - Docs
+
+Desenvolvido para descrever documentação de um projeto ASP.NET Core de uma Api de livraria , desenvolvida em atividade em curso de FullStack - Tecnologia da Informação desenvolvido pelo SENAI.
+
+#### Conteúdo
+
+* conteúdo de produção da api (parte de projetos)
+* descrição de documentação desenvolvida com o swaggwer e com o insomnia
+* teste da aplicação
+* documentação do teste da aplicação
+
+## Dados do angular sobre o desenvolvimento da aplicação
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
 ## Development server
