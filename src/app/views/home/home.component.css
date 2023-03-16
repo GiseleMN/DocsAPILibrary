@@ -1,0 +1,13 @@
+.logo {
+    width: 600px;
+    height: 600px;
+    border-radius: 40px;
+}
+
+.ground {
+
+    max-height: max-content;
+    top: 100px;
+    position: static;
+    z-index: 2;
+}

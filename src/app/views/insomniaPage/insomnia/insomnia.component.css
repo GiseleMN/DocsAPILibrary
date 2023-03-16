@@ -1,0 +1,10 @@
+.img_insomnia {
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.img_insomnia:hover {
+    transition: 2s;
+    transform: scale(2.2);
+}

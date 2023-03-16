@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    background: #000;
+    box-shadow: 3px 3px 5px #147d85;
+    color: #93effb;
+}
+
+main,
+section {
+    width: 90vw;
+    margin: 60px auto;
+}
+
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+
+#logo {
+    float: left;
+}
+
+
+#caixa {
+    background: #00242a;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 5px;
+}
+
+
+/* classes */
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.sob {
+    margin-top: 50px;
+}
+
+.img_text {
+    width: 50%;
+}
+
+.centralizando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.box_img {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.boxs {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name {
+    color: #30888f;
+}
+
+.space {
+
+    border-bottom: 1px solid #36e2fc;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.img-postagem {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.observacao {
+    border-left: 5px solid #30888f;
+    display: block;
+    padding-left: 5px;
+    margin-top: 10px;
+
+}
+
+.dados img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dados a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*formatacao do menu**********************/
+a {
+    text-decoration: none;
+}
+
+/* links nao visitados ***/
+a:link {
+    color: #36e2fc;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*links visitados   **/
+a:visited {
+    color: #30888f;
+}
+
+/* links hover */
+a:hover {
+    color: #1fffd6;
+}
+
+/* links active */
+a:active {
+    color: #073231;
+}
+
+.img-postagem:hover {
+    transition: 2s;
+    transform: scale(2.2);
+}

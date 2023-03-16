@@ -1,0 +1,19 @@
+#menu {
+    float: right;
+    padding: 10px 0;
+    z-index: 6;
+}
+
+#navegacao {
+    background-color: #000c0e;
+    border-bottom: 1px solid #04363e;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#area {
+    width: 85%;
+    margin: 0 auto;
+}

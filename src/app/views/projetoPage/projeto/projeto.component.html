@@ -1,0 +1,176 @@
+<section>
+    <div id="caixa" class="sob article">
+        <h1 class="principal">Conteúdo desenvolvido </h1>
+        <span class="space"></span>
+
+        <div class="principal">
+            <h3 class="name">Introdução</h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Desenvolvimento de uma API Restfull, desenvolvida para retorno em
+                formato Json (método mvc). Adicionando camada de repositório responsável pelo tráfego e dados da
+                aplicação com o banco de dados.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Atividade proposta em desenvolvimento guiada em aula, juntamente ao
+                tutor, em forma de aprendizado para desenvolvimento de APIs.
+            </p>
+        </div>
+        <div class="principal">
+            <h3>Passa acessar o projeto da API no Github acesse o link abaixo:</h3>
+            <div class="dados">
+                <a href="https://github.com/GiseleMN" target="_blank"><img src="assets/Image/Octocat.png">
+                    Projeto livraria API - GitHub</a>
+            </div>
+            <h3>Para acesso a API acesse o link abaixo:</h3>
+
+            <a target="_blank" type="disable">Projeto livraria API </a>
+        </div>
+        <br>
+        <div class="principal">
+            <h3 class="name">Descrição Geral</h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Esse projeto estará realizando uma simulação de livraria, na qual terá
+                duas entidades, sendo a classe de usuário(users), e a classe de livros( book). Cada classe com
+                suas propriedades específicas, sendo que :
+            </p>
+            <br>
+            <div>
+                <h4>na classe usuário (User):</h4>
+                <ul>
+                    <li>UserId( identificador gerado pelo banco de dados)</li>
+                    <li>Propriedade email( email de cadastro para acesso)</li>
+                    <li>Propriedade Password ( senha do cadastro de acesso)</li>
+                </ul>
+                <h4>na classe livro (Book):</h4>
+                <ul>
+
+                    <li>BookId(identificador gerado pelo banco de dados)</li>
+                    <li>Propriedade Title ( Título do livro)</li>
+                    <li>Propriedade NumberOfPages ( Quantidade de páginas que o livro possui)</li>
+                    <li>Propriedade Availability ( verifica a disponibilidade do livro sim/não)</li>
+                </ul>
+            </div>
+            <h3 class="name">Descrição de desenvolvimento do projeto</h3>
+            <br>
+            <h4>1 - Desenvolvimento da API - implementação de pacotes Nugget</h4>
+            <ul>
+                <li> <span class="name">Microsoft Entity Framework Core</span> ( de forma explícita)
+                </li>
+                <li> <span class="name">Microsoft Entity Framework Core Design</span> (ferramenta para linha
+                    linha de comando multiplataforma)</li>
+                <li> <span class="name">Microsoft Entity Framework Core SqlServer</span>(suporte ao banco de
+                    dados Sql Server)
+                </li>
+                <li> <span class="name">Microsoft Entity Framework Core Tools</span>( ferramenta para realização
+                    de migrações EF Core e engenharia scaffolding para banco de dados)
+                </li>
+            </ul>
+            <app-projeto-season id="" contentName="Pacote de Nugget" contentImg="assets/Image/nugets.png"
+                descriptionImg="img_nugget">
+            </app-projeto-season>
+
+        </div>
+        <!-- </div> -->
+        <div id="caixa" class=" space ">
+            <h3>Desenvolvendo classe Entidade Livro e Usuário</h3>
+        </div>
+
+        <!-- <div id="caixa" class="projeto_season principal "> -->
+
+        <div class="box_img">
+            <!-- : fazendo uso de DataAnnotations, para migrações ao banco de dados -->
+            <app-projeto-season id="1" contentName="Classe usuário" contentImg="assets/Image/userEntity.png"
+                descriptionImg="class_user_img">
+            </app-projeto-season>
+
+            <app-projeto-season id="2" contentName="Classe Livro" contentImg="assets/Image/BookEntity.png"
+                descriptionImg2="class_book_img">
+            </app-projeto-season>
+
+        </div>
+        <div id="caixa" class="space">
+            <h3>Desenvolvendo Classe Context - Configuração para o banco de dados</h3>
+        </div>
+
+        <br>
+        <div class="box_img">
+            <app-projeto-season id="3" contentName="Classe Context" contentImg="assets/Image/ClassContext.png"
+                descriptionImg="Class_context">
+            </app-projeto-season>
+        </div>
+        <br>
+        <div id="caixa" class="space">
+            <h3 class="space">Configurações da Classe Program</h3>
+            <br>
+            <h4>Configurações de Serviços / Adicionando Cors / Adicionando JWT Bearer</h4>
+        </div>
+        <div class="box_img">
+            <app-projeto-season id="4" contentImg="assets/Image/Program.png"
+                contentName="Configurações na Classe Program">
+            </app-projeto-season>
+            <app-projeto-season id="5" contentImg="assets/Image/Program -2.png"
+                contentName="(inclusão do:Cors/JwtBeare)">
+            </app-projeto-season>
+        </div>
+        <div id="caixa" class="space">
+            <h3>Migrations & Banco de Dados</h3>
+        </div>
+        <br>
+        <div class="box_img">
+            <app-projeto-season id="6" contentName="Conteúdo Migration"
+                contentImg="assets/Image/Migration.png"></app-projeto-season>
+        </div>
+        <div class="box_img">
+            <app-projeto-season id="7" contentImg="assets/Image/dbBook.png"
+                contentName="Entidade livro no Banco de Dados"></app-projeto-season>
+            <app-projeto-season id="8" contentName="Entidade Usuário no Banco de Dados"
+                contentImg="assets/Image/dbUser.png"></app-projeto-season>
+
+        </div>
+        <br>
+        <div id="caixa" class=" space">
+            <h3>Interfaces </h3>
+        </div>
+        <div class="box_img">
+            <app-projeto-season id="9" contentName="User Interface"
+                contentImg="assets/Image/UserInterface.png"></app-projeto-season>
+            <app-projeto-season id="10" contentName="Book Interface"
+                contentImg="assets/Image/bookInterface.png"></app-projeto-season>
+        </div>
+
+        <div id="caixa" class="space">
+            <br>
+            <h3> Repositórios </h3>
+        </div>
+        <br>
+
+        <div class="box_img">
+            <app-projeto-season id="11" contentName="User Repository "
+                contentImg="assets/Image/UserRepository.png"></app-projeto-season>
+            <app-projeto-season id="12" contentName="Book Repository" contentImg="assets/Image/BookRepository.png">
+            </app-projeto-season>
+        </div>
+        <div id="caixa" class="space">
+            <br>
+            <h3> Classes Controles</h3>
+        </div>
+        <br>
+        <div class="box_img">
+            <app-projeto-season id="13" contentName="User Controller "
+                contentImg="assets/Image/UserController.png"></app-projeto-season>
+            <app-projeto-season id="14" contentName="Book Controller" contentImg="assets/Image/BookController.png">
+            </app-projeto-season>
+        </div>
+        <div id="caixa" class="space">
+            <br>
+            <h3> Login View Model / Login Controller</h3>
+        </div>
+        <br>
+        <div class="box_img">
+            <app-projeto-season id="15" contentName="LoginViewModel"
+                contentImg="assets/Image/LoginViewModel.png"></app-projeto-season>
+            <app-projeto-season id="16" contentName="Login Controller" contentImg="assets/Image/LoginController.png">
+            </app-projeto-season>
+        </div>
+
+    </div>
+</section>
