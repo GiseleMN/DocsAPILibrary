@@ -6,7 +6,7 @@ export const data = [
         "name": "Classe Usuário",
         "img": "assets/Image/userEntity.png",
         "descriptionImg": "UserEntity_img",
-        "conteudoItem": "sei la"
+        "conteudoItem": "Classe Usuário - Fazendo uso de Data Annotations :Para migração com o banco de dados. [ Dados:{ Chave de identificação(id)	| Email  | Senha  | Tipo }]",
     },
     {
         "id": "2",
@@ -14,7 +14,7 @@ export const data = [
         "name": "Classe Livro",
         "img": "assets/Image/BookEntity.png",
         "descriptionImg": "BookEntity_img",
-        "conteudoItem": ""
+        "conteudoItem": " Classe Livro - [ Dados :{ Chave de identificação (id) |  Título | Número de páginas |  Disponibilidade}]"
     },
     {
         "id": "3",
@@ -132,7 +132,13 @@ export const data = [
         "img": "assets/Image/LoginController.png",
         "descriptionImg": "Book_controller",
         "conteudoItem": ""
-
+    },
+    {
+        "id": "17",
+        "name": "NuGet",
+        "img": "assets/Image/LoginController.png",
+        "descriptionImg": "Book_controller",
+        "conteudoItem": "NuGet -  Pacotes do NuGet é um meio em que os desenvolvedores (empresas) podem criar código e compartilhar soluções para que outras pessoas utilizem."
     }
 ]
 

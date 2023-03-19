@@ -1,0 +1,576 @@
+<main>
+    <div id="caixa" class="sob principal paragrafos">
+        <div class="titulo">
+            <h1>Plano de testes</h1>
+        </div>
+
+
+        <div class="resumo">
+            <p>
+                Plano de testes da API Restfull da EXOAPI, para sistema de biblioteca. Teste de
+                Back-End, para sistema de cadastro de usuário e consulta de livros.
+            </p>
+        </div>
+        <br>
+        <img class="logo logo-teste" src="assets/Image/Connect.png" alt="Logo ">
+    </div>
+    <div id="caixa" class="tabela">
+        <table>
+            <tr>
+                <td class="tb_left">Gerente:</td>
+                <td>Senai - Matheus Holannda <b>(gerente do projeto)</b></td>
+            </tr>
+            <tr>
+                <td class="tb_left">Líder:</td>
+                <td> Gisele Nisimura (líder de produção desse preojeto)</td>
+            </tr>
+            <tr>
+                <td class="tb_left">Membros:</td>
+                <td>
+
+                    <li>
+                        <h4>Equipe 1</h4>
+                        <ul>
+
+                            <li>--</li>
+                            <li>--</li>
+                            <li>--</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Equipe 2</h4>
+                        <ul>
+
+                            <li>--</li>
+                            <li>--</li>
+                            <li>--</li>
+                        </ul>
+                    </li>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="tb_left">Linha do Tempo:</td>
+                <td> 22/03/2023 </td>
+            </tr>
+            <tr>
+                <td class="tb_left">Projeto:</td>
+                <td>LibraryAPi</td>
+            </tr>
+        </table>
+    </div>
+    <div id="caixa">
+        <br>
+        <div id="caixa" class="space">
+            <h2>Histórico de Revisões</h2>
+        </div>
+        <div id="caixa " class="tabela">
+
+            <table>
+                <tr>
+                    <th class="tb_left">
+                        Data</th>
+                    <th class="tb_left">
+                        Versão</th>
+                    <th class="tb_left">
+                        Descrição</th>
+                    <th class="tb_left">
+                        Autor</th>
+                </tr>
+                <tr>
+                    <td>11 / 03 / 2023</td>
+                    <td>1.0</td>
+                    <td>Projecão Inicial</td>
+                    <td>LibraryAPi</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="caixa">
+
+        <div id="caixa" class="space centralizando">
+            <h1>Detalhes do Projeto</h1>
+        </div>
+        <div class="resumo listagem">
+            <div class="name centralizando ">
+                <h1>Introdução</h1>
+            </div>
+            <p>
+                A Testful é uma empresa de desenvolvimento de software focada em testes
+                para
+                garantir a segurança, confiabilidade e consistência de softwares e implementações.
+                <br>Implementação de testes em Softwares garante a integridade , a
+                consistência dos dados e as informações por ele disponibilizadas.
+            </p>
+            <div class="name centralizando">
+                <h1>Objetivos e Propósitos</h1>
+            </div>
+            <h3>Objetivos</h3>
+            <br>
+            <ul>
+                <h4>Esse documento de Planos de Teste compõe dos seguinte objetivos:</h4>
+                <li>Identificar informações do projeto existentes e testar seus componentes</li>
+                <li>Listar os requisitos e Testar áreas recomendadas</li>
+                <li>Recomendar e descrever as estratégias de teste a serem empregadas</li>
+                <li>Identificar os recursos necessários</li>
+                <li>Listar os resultados do projeto de teste
+                </li>
+            </ul>
+            <br>
+            <h3>ExoAPI (Contratante)</h3>
+            <br>
+            <p>
+                A ExoApi é uma empresa de desenvolvimento de softwares focada em
+                desenvolver
+                aplicações para empresas de grande e médio porte, além de construção de Web Applications, Web Sites,
+                Local
+                Systems , focando sempre em dar um produto seguro.
+                <br>Para isso, o sistema desenvolvido precisa de uma análise de teste em
+                sua
+                aplicação desenvolvida com base numa aplicação de biblioteca, no qual usuários farão busca da
+                disponibilidade de um livro, para isso o usuário necessita ter cadastro de acesso, tendo como segurança
+                de
+                log o uso de token.
+                <br>O software desenvolvido é composto pelas seguintes regras
+                pré-estabelecidas:
+            </p>
+            <ul>
+                <li>Identificar informações do projeto existente e os componentes de software que devem ser testados
+                </li>
+                <li>Listar os requisitos e testar o s recomendados</li>
+                <li>Recomendar e descrever as estratégias de teste a serem empregadas</li>
+                <li>Identificar recursos necessários</li>
+                <li>Listar os resultados do projeto de teste</li>
+            </ul>
+            <div class="name centralizando">
+                <h1> Escopo</h1>
+            </div>
+
+
+            <p>
+                A LibApi passará por testes unitários, testes de integração e de sistema.
+                Os
+                testes unitários e de integração vão lidar com a qualidade funcional, das bases de dados, de
+                controle de
+                acesso, enquanto os teste de sistemas tratarão as questões de performance.
+                <br>Os testes de performance entre o banco de dados será :
+            </p>
+            <ul>
+                <li>na correta atualização de um cadastro no banco de dados, tanto ao cadastrar como ao atualizar
+                    (em
+                    todas
+                    entidades)</li>
+                <li>criar token ao realizar um login, bem como erro com dados inválidos</li>
+            </ul>
+
+            <h3>1 - Especificações do Projeto de Teste</h3>
+            <br>
+            <p>
+                A tabela abaixo identifica a documentação e disponibilidade usados para
+                desenvolver o plano de teste:
+            </p>
+            <br>
+            <div>
+                <tr>
+                    <th class=" tb_left">Documento</th>
+                    <th class=" tb_left">Disponível / Criado</th>
+                    <th class=" tb_left"> Recebido / Revisado</th>
+                </tr>
+                <tr>
+                    <td>Especificações de Requisitos</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Plano de Projeto</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Modelo e Análise</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Modelo de Projeto</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Docuemento de Arquitetura</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Protótipo</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Manual do Usuário</td>
+                    <td>
+                        <li>Sim</li>
+                        <li class="li_sim">Não</li>
+                    </td>
+                    <td>
+                        <li>Sim</li>
+                        <li class="li_sim">Não</li>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Lista de Riscos</td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+                    <td>
+                        <li class="li_sim">Sim</li>
+                        <li>Não</li>
+                    </td>
+
+                </tr>
+            </div>
+            <div class="name centralizando ">
+                <h3> Estratégia de Teste</h3>
+            </div>
+            <h3>1 - Requisitos a testar</h3>
+            <p>
+                Identificação de itens - casos de uso, requisitos funcionais - o que será
+                testado
+            </p>
+            <div>
+                <h4>1 - Teste de Banco de dados</h4>
+                <ul>
+                    <li>verificar se o sistema pode realizar o cadastro , consultadas ou remover um usuário</li>
+                    <li>verificar se o sistema pode realizar um cadastrado, atualizar dados, fazer consulta ou remover
+                        um
+                        livro cadastrado</li>
+                </ul>
+            </div>
+            <div>
+                <h4>2 - Teste Funcional</h4>
+                <ul>
+                    <li>verificar se quando o usuário logar o sistema irá gerar um token de acesso</li>
+                    <li>verificar se o usuário consegue acessar com o uso do token</li>
+                </ul>
+
+            </div>
+            <div>
+                <h4>3 - Performance</h4>
+                <ul>
+                    <li>verifique o tempo de resposta</li>
+                </ul>
+            </div>
+            <div>
+                <h4>4 - Teste de segurança e controle de Acesso</h4>
+                <ul>
+                    <li>verificar se o acesso de usuário será somente com autorização com uso do token</li>
+                    <li>verificar hierarquia de acesso, no caso se somente o admin pode realizar alterações nas
+                        informações
+                    </li>
+                </ul>
+
+            </div>
+            <div>
+                <h4>5 - Teste de falha</h4>
+                <p>__________ Nenhum __________</p>
+            </div>
+            <br>
+
+            <h3>2 - Tipos de Teste</h3>
+
+            <div class="tabela">
+                <h4>
+                    2.1 - Teste de Integridade de banco de dados
+                </h4>
+                <table>
+                    <tr>
+                        <td class="tb_left">Objetivo do Teste:</td>
+                        <td>Garantir que os métodos e processos de acesso ao banco de dados funcionem apropriadamente e
+                            sem
+                            corrupções de dados</td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Técnica: </td>
+                        <td>
+                            <ul>
+                                <li>Invocar cada método e processo e de acesso ao banco de dados, alimentando cada um
+                                    com
+                                    dados
+                                    ou requisições de dados válidos e inválidos</li>
+                                <li>Inspecionar o banco de dados para garantir que os dados foram preenchidos como
+                                    deveria,
+                                    que
+                                    os eventos do banco de dados ocorram apropriadamente , ao realizar consultas que os
+                                    dados
+                                    retornem corretamente</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Critério de Finalização:</td>
+                        <td>Assim que todos os métodos, e processos de acesso a base de dados funcionem como projetados,
+                            e
+                            sem
+                            corrupção</td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Considerações Especiais:</td>
+                        <td>
+                            <ul>
+                                <li>O teste pode necessitar de um ambiente de desenvolvimento ou drivers de SGBD para
+                                    inserção
+                                    ou modificação dos dados</li>
+                                <li>Processos devem ser invocados manualmente</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tabela">
+                <h4>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2 - Teste de Função
+                </h4>
+                <table>
+                    <tr>
+                        <td class="tb_left">Objetivo do Teste:</td>
+                        <td>Garantir a funcionalidade apropriada ao alvo teste, incluindo entrada de dados e
+                            processamento
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Técnica:</td>
+                        <td>
+                            <h4>Executar cada caso de uso, fluxo de caso de uso, usando dados válidos e inválidos,
+                                verificar
+                                o
+                                seguinte:</h4>
+                            <br>
+                            <ul>
+                                <li>ver os resultados esperados fazendo uso de dados válidos</li>
+                                <li>se as mensagens de erro ou aviso apropriados são exibidas ao inserir dados inválidos
+                                </li>
+                                <li>verificar se cada regra de negócio está sendo aplicada apropriadamente</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Critério de Finalização:</td>
+                        <td>
+                            <ul>
+                                <li>se todos os testes planejados foram realizados</li>
+                                <li>caso haja erros de funcionamento, se esses foram identificados e tratados</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Considerações Especiais:</td>
+                        <td>------- nenhuma-----------</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="tabela">
+                <h4>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3 - Teste de Segurança e Controle de Acesso
+                </h4>
+                <table>
+                    <tr>
+                        <td class="tb_left">Objetivo do Teste:</td>
+                        <td>verificar se o acesso está restrito apenas a pessoas autorizadas</td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Técnica:</td>
+                        <td>
+                            <ul>
+                                <li>identifique e liste cada tipo de usuário e as funções ou dados para os quais o seu
+                                    tipo
+                                    de
+                                    usuário tem permissão</li>
+                                <li>crie testes para cada tipo de usuário e verifique cada permissão criando transações
+                                    específicas para cada tipo de usuário</li>
+                                <li>modifique o tipo de usuário e repita os testes para os mesmos usuários, verificando
+                                    em
+                                    cada
+                                    usuário se os dados adicionados estão corretamente disponíveis ou negados</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Critério de Finalização:</td>
+                        <td>se todas as transações estão funcionando corretamente</td>
+                    </tr>
+                    <tr>
+                        <td class="tb_left">Considerações Especiais:</td>
+                        <td>Necessário ser revisado com o administrador da rede do contratante. (esse teste pode não ser
+                            necessário)</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div class="name centralizando">
+            <h1> Recursos</h1>
+        </div>
+        <div class="tabela">
+            <h4>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A tabela abaixo mostra os recursos do sistema para o projeto:
+            </h4>
+            <table>
+                <tr>
+                    <td class="tb_left">Banco de dados:</td>
+                    <td>
+                        <ul>
+                            <li>Azure DataBase Studio</li>
+                            <li>Docker (container/ persistencia em volume)</li>
+                            <li>servidor SQL Server</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tb_left">Terminais de Teste:</td>
+                    <td> 2 PCs</td>
+                </tr>
+                <tr>
+                    <td class="tb_left">Ferramenta de desenvolvimento:</td>
+                    <td>Visual Studio 2022</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="name centralizando">
+            <h1> Cronograma</h1>
+        </div>
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th class="tb_left">Histórico</th>
+                    <th class="tb_left">Data de Início</th>
+                    <th class="tb_left">Data de Término</th>
+                </tr>
+                <tr>
+                    <td>Planejar Teste</td>
+                    <td>13 / 03 / 2023</td>
+                    <td>14 / 03 / 2023</td>
+                </tr>
+                <tr>
+                    <td>Projetar Teste</td>
+                    <td>15 / 03 / 2023</td>
+                    <td>16 / 03 /2023</td>
+                </tr>
+                <tr>
+                    <td>Implementar Teste</td>
+                    <td>17 / 03 /2023</td>
+                    <td>17 / 03 / 2023</td>
+                </tr>
+                <tr>
+                    <td>Executar Teste</td>
+                    <td>17 / 03 / 2023</td>
+                    <td>17 / 03 / 2023</td>
+                </tr>
+                <tr>
+                    <td>Avaliar Teste</td>
+                    <td>17 / 03 / 2023</td>
+                    <td>17 / 03 / 2023</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="tabela2">
+
+            <h1>Aprovação do Projeto</h1>
+
+            <table>
+                <tr>
+                    <td>
+                        <p>Preparado por:</p>
+                        <br>
+                    </td>
+
+                    <td>
+                        <p>Aprovado por:</p>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab–hr">
+                        <h5>
+                            <hr>
+                        </h5>
+                        <p>cargo</p>
+                        <br>
+                    </td>
+                    <td>
+                        <h5>
+                            <hr>
+                        </h5>
+                        <p>cargo</p>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h5>
+                            <hr>
+                        </h5>
+                        <p>DD / MM / AAAA</p>
+                    </td>
+                    <td>
+                        <h5>
+                            <hr>
+                        </h5>
+                        <p>DD / MM / AAAA</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</main>

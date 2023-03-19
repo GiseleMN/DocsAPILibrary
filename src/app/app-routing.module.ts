@@ -6,15 +6,16 @@ import { HomeComponent } from './views/home/home.component';
 import { InsomniaComponent } from './views/insomniaPage/insomnia/insomnia.component';
 import { ProjetoComponent } from './views/projetoPage/projeto/projeto.component';
 import { SwaggerComponent } from './views/swaggerPage/swagger/swagger.component';
+import { TestesComponent } from './views/testes/testes.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'insomnia', component: InsomniaComponent },
   { path: 'swagger', component: SwaggerComponent },
   { path: 'projeto', component: ProjetoComponent },
-  { path: 'header', component: HeaderComponent },
+  { path: 'testes', component: TestesComponent },
   { path: 'content/:id', component: ContentComponent },
-  // { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

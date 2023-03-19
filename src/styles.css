@@ -10,7 +10,9 @@ body {
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     background: #000;
     box-shadow: 3px 3px 5px #147d85;
-    color: #93effb;
+    color: #fff;
+    word-spacing: 5px;
+
 }
 
 main,
@@ -32,7 +34,7 @@ ul {
 
 
 #caixa {
-    background: #00242a;
+    background: #242a29;
     padding: 20px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 5px black;
@@ -81,7 +83,16 @@ ul {
 }
 
 .name {
-    color: #30888f;
+    color: #93effb;
+}
+
+.space-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
 }
 
 .space {
@@ -126,14 +137,15 @@ a {
 
 /* links nao visitados ***/
 a:link {
-    color: #36e2fc;
+    color: #93effb;
+    text-transform: uppercase;
     padding: 7px;
     border-radius: 5px;
 }
 
 /*links visitados   **/
 a:visited {
-    color: #30888f;
+    color: #fff;
 }
 
 /* links hover */
