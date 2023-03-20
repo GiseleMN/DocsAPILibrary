@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-projeto-season',
-  templateUrl: './projeto-season.component.html',
-  styleUrls: ['./projeto-season.component.css']
+  selector: 'app-card-projeto',
+  templateUrl: './card-projeto.component.html',
+  styleUrls: ['./card-projeto.component.css']
 })
-export class ProjetoSeasonComponent implements OnInit {
+export class CardProjetoComponent implements OnInit {
 
   @Input()
   id: string | null = "";

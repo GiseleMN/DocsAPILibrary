@@ -278,47 +278,8 @@
                 <h3> Estratégia de Teste</h3>
             </div>
             <h3>1 - Requisitos a testar</h3>
-            <p>
-                Identificação de itens - casos de uso, requisitos funcionais - o que será
-                testado
-            </p>
-            <div>
-                <h4>1 - Teste de Banco de dados</h4>
-                <ul>
-                    <li>verificar se o sistema pode realizar o cadastro , consultadas ou remover um usuário</li>
-                    <li>verificar se o sistema pode realizar um cadastrado, atualizar dados, fazer consulta ou remover
-                        um
-                        livro cadastrado</li>
-                </ul>
-            </div>
-            <div>
-                <h4>2 - Teste Funcional</h4>
-                <ul>
-                    <li>verificar se quando o usuário logar o sistema irá gerar um token de acesso</li>
-                    <li>verificar se o usuário consegue acessar com o uso do token</li>
-                </ul>
+            <app-conteudo id="1"></app-conteudo>
 
-            </div>
-            <div>
-                <h4>3 - Performance</h4>
-                <ul>
-                    <li>verifique o tempo de resposta</li>
-                </ul>
-            </div>
-            <div>
-                <h4>4 - Teste de segurança e controle de Acesso</h4>
-                <ul>
-                    <li>verificar se o acesso de usuário será somente com autorização com uso do token</li>
-                    <li>verificar hierarquia de acesso, no caso se somente o admin pode realizar alterações nas
-                        informações
-                    </li>
-                </ul>
-
-            </div>
-            <div>
-                <h4>5 - Teste de falha</h4>
-                <p>__________ Nenhum __________</p>
-            </div>
             <br>
 
             <h3>2 - Tipos de Teste</h3>
@@ -330,7 +291,8 @@
                 <table>
                     <tr>
                         <td class="tb_left">Objetivo do Teste:</td>
-                        <td>Garantir que os métodos e processos de acesso ao banco de dados funcionem apropriadamente e
+                        <td>Garantir que os métodos e processos de acesso ao banco de dados funcionem
+                            apropriadamente e
                             sem
                             corrupções de dados</td>
                     </tr>
@@ -338,14 +300,16 @@
                         <td class="tb_left">Técnica: </td>
                         <td>
                             <ul>
-                                <li>Invocar cada método e processo e de acesso ao banco de dados, alimentando cada um
+                                <li>Invocar cada método e processo e de acesso ao banco de dados, alimentando cada
+                                    um
                                     com
                                     dados
                                     ou requisições de dados válidos e inválidos</li>
                                 <li>Inspecionar o banco de dados para garantir que os dados foram preenchidos como
                                     deveria,
                                     que
-                                    os eventos do banco de dados ocorram apropriadamente , ao realizar consultas que os
+                                    os eventos do banco de dados ocorram apropriadamente , ao realizar consultas que
+                                    os
                                     dados
                                     retornem corretamente</li>
                             </ul>
@@ -353,7 +317,8 @@
                     </tr>
                     <tr>
                         <td class="tb_left">Critério de Finalização:</td>
-                        <td>Assim que todos os métodos, e processos de acesso a base de dados funcionem como projetados,
+                        <td>Assim que todos os métodos, e processos de acesso a base de dados funcionem como
+                            projetados,
                             e
                             sem
                             corrupção</td>
@@ -362,7 +327,8 @@
                         <td class="tb_left">Considerações Especiais:</td>
                         <td>
                             <ul>
-                                <li>O teste pode necessitar de um ambiente de desenvolvimento ou drivers de SGBD para
+                                <li>O teste pode necessitar de um ambiente de desenvolvimento ou drivers de SGBD
+                                    para
                                     inserção
                                     ou modificação dos dados</li>
                                 <li>Processos devem ser invocados manualmente</li>
@@ -392,7 +358,8 @@
                             <br>
                             <ul>
                                 <li>ver os resultados esperados fazendo uso de dados válidos</li>
-                                <li>se as mensagens de erro ou aviso apropriados são exibidas ao inserir dados inválidos
+                                <li>se as mensagens de erro ou aviso apropriados são exibidas ao inserir dados
+                                    inválidos
                                 </li>
                                 <li>verificar se cada regra de negócio está sendo aplicada apropriadamente</li>
                             </ul>
@@ -427,13 +394,16 @@
                         <td class="tb_left">Técnica:</td>
                         <td>
                             <ul>
-                                <li>identifique e liste cada tipo de usuário e as funções ou dados para os quais o seu
+                                <li>identifique e liste cada tipo de usuário e as funções ou dados para os quais o
+                                    seu
                                     tipo
                                     de
                                     usuário tem permissão</li>
-                                <li>crie testes para cada tipo de usuário e verifique cada permissão criando transações
+                                <li>crie testes para cada tipo de usuário e verifique cada permissão criando
+                                    transações
                                     específicas para cada tipo de usuário</li>
-                                <li>modifique o tipo de usuário e repita os testes para os mesmos usuários, verificando
+                                <li>modifique o tipo de usuário e repita os testes para os mesmos usuários,
+                                    verificando
                                     em
                                     cada
                                     usuário se os dados adicionados estão corretamente disponíveis ou negados</li>
@@ -446,7 +416,8 @@
                     </tr>
                     <tr>
                         <td class="tb_left">Considerações Especiais:</td>
-                        <td>Necessário ser revisado com o administrador da rede do contratante. (esse teste pode não ser
+                        <td>Necessário ser revisado com o administrador da rede do contratante. (esse teste pode não
+                            ser
                             necessário)</td>
                     </tr>
                 </table>

@@ -3,11 +3,11 @@ import { Component, Input, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-swagger-season',
-  templateUrl: './swagger-seasons.component.html',
-  styleUrls: ['./swagger-seasons.component.css']
+  selector: 'app-card-swagger',
+  templateUrl: './card-swagger.component.html',
+  styleUrls: ['./card-swagger.component.css']
 })
-export class SwaggerSeasonsComponent implements OnInit {
+export class CardSwaggerComponent implements OnInit {
 
 
   @Input()

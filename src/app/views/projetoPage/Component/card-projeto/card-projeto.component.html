@@ -1,10 +1,11 @@
-<div id="caixa" class="principal">
-
-    <div class="route_return space-button">
+<div class="box_img">
+    <div class="space-button">
         <a [routerLink]="['content',id]">{{contentName}}<img
                 src="https://icongr.am/fontawesome/arrow-circle-o-right.svg?size=28&color=ffffff"> </a>
     </div>
+    <br>
+    <div class="img_text">
 
-    <img class="img-postagem" [src]="contentImg" [alt]="contDescriptionImg">
-
+        <img class="img-postagem" [src]="contentImg" alt="descriptionImg">
+    </div>
 </div>

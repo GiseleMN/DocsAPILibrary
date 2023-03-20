@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwaggerSeasonsComponent } from './swagger-seasons.component';
+import { CardInsomniaComponent } from './card-insomnia.component';
 
-describe('SwaggerSeasonsComponent', () => {
-  let component: SwaggerSeasonsComponent;
-  let fixture: ComponentFixture<SwaggerSeasonsComponent>;
+describe('CardInsomniaComponent', () => {
+  let component: CardInsomniaComponent;
+  let fixture: ComponentFixture<CardInsomniaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SwaggerSeasonsComponent]
+      declarations: [CardInsomniaComponent]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SwaggerSeasonsComponent);
+    fixture = TestBed.createComponent(CardInsomniaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

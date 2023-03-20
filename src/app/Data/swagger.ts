@@ -1,4 +1,4 @@
-export const swagger = [
+export const data = [
 
     {
         "id": "1",

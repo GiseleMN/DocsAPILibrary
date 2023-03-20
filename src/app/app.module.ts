@@ -1,19 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BackgroundComponent } from './componente/background/background.component';
 import { HeaderComponent } from './componente/header/header.component';
+
 import { ProjetoComponent } from './views/projetoPage/projeto/projeto.component';
 import { SwaggerComponent } from './views/swaggerPage/swagger/swagger.component';
 import { InsomniaComponent } from './views/insomniaPage/insomnia/insomnia.component';
 import { HomeComponent } from './views/home/home.component';
 import { TestesComponent } from './views/testes/testes.component';
-import { BackgroundComponent } from './componente/background/background.component';
-import { ContentComponent } from './componente/content/content.component';
-import { InsomniaSeasonComponent } from './views/insomniaPage/insomnia-season/insomnia-season.component';
-import { ProjetoSeasonComponent } from './views/projetoPage/projeto-season/projeto-season.component';
-import { SwaggerSeasonsComponent } from './views/swaggerPage/swagger-seasons/swagger-seasons.component';
+
+import { ContentComponent } from './views/projetoPage/Component/content/content.component';
+import { CardInsomniaComponent } from './views/insomniaPage/Component/card-insomnia/card-insomnia.component';
+import { CardProjetoComponent } from './views/projetoPage/Component/card-projeto/card-projeto.component';
+import { CardSwaggerComponent } from './views/swaggerPage/Component/card-swagger/card-swagger.component';
+import { ContentSwaggerComponent } from './views/swaggerPage/Component/content-swagger/content-swagger.component';
+import { ContentInsomniaComponent } from './views/insomniaPage/Component/content-insomnia/content-insomnia.component';
+import { ContentTesteComponent } from './views/testes/Component/content-teste/content-teste.component';
+
+import { TabelaComponent } from './views/testes/Component/tabela/tabela.component';
+import { ConteudoComponent } from './views/testes/Component/conteudo/conteudo.component';
 
 
 
@@ -28,9 +35,15 @@ import { SwaggerSeasonsComponent } from './views/swaggerPage/swagger-seasons/swa
     TestesComponent,
     BackgroundComponent,
     ContentComponent,
-    SwaggerSeasonsComponent,
-    ProjetoSeasonComponent,
-    InsomniaSeasonComponent,
+    CardSwaggerComponent,
+    CardProjetoComponent,
+    CardInsomniaComponent,
+    ContentSwaggerComponent,
+    ContentInsomniaComponent,
+    ContentTesteComponent,
+    TabelaComponent,
+    ConteudoComponent,
+
 
   ],
   imports: [

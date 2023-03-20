@@ -1,4 +1,4 @@
-export const insomnia = [
+export const data = [
     {
         "name": "Login - realizando login e gerando Token",
         "img": "assets/Image/insomnia/InsominiaLogin.png.png",
