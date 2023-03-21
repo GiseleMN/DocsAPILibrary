@@ -9,9 +9,9 @@ import { data } from './data';
 })
 export class ConteudoComponent implements OnInit {
 
-  title: string = "";
-  itemOne: string = "";
-  itemTwo: string = "";
+  conteudoTitle: string = "";
+  conteudoItemOne: string = "";
+  conteudoItemTwo: string = "";
 
   private id: string | null = "";
 
@@ -26,11 +26,10 @@ export class ConteudoComponent implements OnInit {
     const resultado = data.filter(
       conteudo_teste => conteudo_teste.id == id)[0]
 
-    this.title = resultado.title
-    this.itemOne = resultado.itemOne
-    this.itemTwo = resultado.itemTwo
+    this.conteudoTitle = resultado.title
+    this.conteudoItemOne = resultado.itemOne
+    this.conteudoItemTwo = resultado.itemTwo
+
   }
-
-
 
 }

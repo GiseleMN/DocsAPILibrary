@@ -21,12 +21,20 @@ section {
     margin: 60px auto;
 }
 
+p {
+    text-indent: 30px;
+    margin: 30px;
+}
+
 
 ul {
     margin-left: 25px;
     margin-bottom: 20px;
 }
 
+li {
+    margin-top: 5px;
+}
 
 #logo {
     float: left;
@@ -48,7 +56,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 .sob {
@@ -63,7 +71,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 20px;
 }
 
 .box_img {
@@ -75,15 +83,8 @@ ul {
 
 }
 
-.boxs {
-    width: 100%;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .name {
-    color: #93effb;
+    color: #64b6c0;
 }
 
 .space-button a {
@@ -103,11 +104,11 @@ ul {
     margin-bottom: 10px;
 }
 
-.img-postagem {
+.img-convencional {
     width: 350px;
     height: 350px;
-    border-radius: 5px;
 }
+
 
 .observacao {
     border-left: 5px solid #30888f;
@@ -156,9 +157,4 @@ a:hover {
 /* links active */
 a:active {
     color: #073231;
-}
-
-.img-postagem:hover {
-    transition: 2s;
-    transform: scale(2.2);
 }

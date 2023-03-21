@@ -1,0 +1,10 @@
+.img-postagem img {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.img-postagem :hover {
+    transition: 2s;
+    transform: scale(2.2);
+}

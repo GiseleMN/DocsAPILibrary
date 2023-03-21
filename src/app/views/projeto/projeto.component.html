@@ -1,0 +1,254 @@
+<section class=" season_projeto">
+    <div id="caixa" class="sob ">
+        <div id="caixa" class="principal space">
+            <h1 class="name" style="font-size: xx-large;">Projeto API - LibraryAPI</h1>
+        </div>
+
+        <h1 class="principal">Conteúdo desenvolvido </h1>
+        <span class="space"></span>
+
+        <div class="principal">
+            <h3 class="name">Introdução</h3>
+            <br>
+            <p>
+                Desenvolvimento de uma API Restfull, desenvolvida para retorno em
+                formato Json (método mvc). Adicionando camada de repositório responsável pelo tráfego e dados da
+                aplicação com o banco de dados.
+                <br>
+                Atividade proposta em desenvolvimento guiada em aula, juntamente ao
+                tutor, em forma de aprendizado para desenvolvimento de APIs.
+            </p>
+            <br>
+
+            <h3>Passa acessar o projeto da API no Github acesse o link abaixo:</h3>
+            <div class="dados">
+                <a href="https://github.com/GiseleMN/LibraryApi" target="_blank"><img src="assets/Image/Octocat.png">
+                    Projeto livraria API - GitHub</a>
+            </div>
+        </div>
+        <br>
+        <div class="principal">
+            <h3 class="name">Descrição Geral</h3>
+            <br>
+            <p>
+                Esse projeto foi desenvolvido de forma a simular um sistema de backend para uma livraria, no qual será
+                implementdo duas entidades para inserção de dados, sendo a classe de usuário(Users), e a classe de
+                livros( Book). Cada classe com suas propriedades específicas, sendo que :
+            </p>
+            <br>
+            <div class="space">
+                <h4>Dentro da classe usuário (User),terá as seguintes propriedades:</h4>
+                <ul>
+                    <li>UserId( identificador gerado pelo banco de dados)</li>
+                    <li>Propriedade email( email de cadastro para acesso)</li>
+                    <li>Propriedade Password ( senha do cadastro de acesso)</li>
+                </ul>
+                <h4>Dentro da classe livro (Book),terá as seguintes propriedades:</h4>
+                <ul>
+                    <li>BookId(identificador gerado pelo banco de dados)</li>
+                    <li>Propriedade Title ( Título do livro)</li>
+                    <li>Propriedade NumberOfPages ( Quantidade de páginas que o livro possui)</li>
+                    <li>Propriedade Availability ( verifica a disponibilidade do livro sim/não)</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="principal">
+            <h3 class="name">Descrição de desenvolvimento do projeto</h3>
+            <br>
+            <div class="space-button">
+                <h4>1 - Desenvolvimento da API - implementação de pacotes Nugget</h4>
+                <ul>
+                    <li> <span class="name">Microsoft Entity Framework Core</span> ( de forma explícita)
+                    </li>
+                    <li> <span class="name">Microsoft Entity Framework Core Design</span> (ferramenta para linha
+                        linha de comando multiplataforma)</li>
+                    <li> <span class="name">Microsoft Entity Framework Core SqlServer</span>(suporte ao banco de
+                        dados Sql Server)
+                    </li>
+                    <li> <span class="name">Microsoft Entity Framework Core Tools</span>( ferramenta para realização
+                        de migrações EF Core e engenharia scaffolding para banco de dados)
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li><span class="name">NuGet -</span>Pacotes do NuGet é um meio em que os desenvolvedores (empresas)
+                        podem criar código e compartilhar soluções para que outras pessoas utilizem.
+                    </li>
+                    <li><span class="name">Entity Framework -</span>é um framework ORM(Object Relational Mapping),
+                        criado
+                        para facilitar a integração com o banco de dados, mapeado tabelas e gerando comandos SQL de
+                        forma
+                        automática.
+                    </li>
+                </ul>
+            </div>
+            <div id="caixa">
+                <h4>Para mais informações: aperte na seta e acesse o link em cada item abaixo.</h4>
+            </div>
+
+            <app-card-projeto id="17" contentName="Pacote de Nugget" contentImg="assets/Image/nugets.png"
+                descriptionImg="img_nugget">
+            </app-card-projeto>
+
+
+        </div>
+
+        <div id="caixa" class=" space ">
+            <h3>Desenvolvendo classe Entidade Livro e Usuário</h3>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Os Objetos são classes que representam algo do mundo real, com suas propriedades.
+            Por exemplo :um usuário, um livro, um produto, etc.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;Nesse projeto vemos dois objetos (Livro , Usuário), cada um com suas
+            propriedades ( dados ) para o desenvolvimento da aplicação.
+        </p>
+
+        <div class="box_img">
+            <app-card-projeto id="1" contentName="Classe usuário" contentImg="assets/Image/userEntity.png"
+                descriptionImg="class_user_img">
+            </app-card-projeto>
+
+            <app-card-projeto id="2" contentName="Classe Livro" contentImg="assets/Image/BookEntity.png"
+                descriptionImg2="class_book_img">
+            </app-card-projeto>
+
+        </div>
+        <div id="caixa" class="space">
+            <h3>Desenvolvendo Classe Context - Configuração para o banco de dados</h3>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Configuração para o banco de dados, classe onde você estrutura as funcionalidades do
+            Entity Framework para o modelo de dados, nessa classe você configurar os dados para a Fluent Api.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;A Fluent Api serve para complementar ou substituir as convenções pré definidas
+            ou não, tendo como resultado final uma chamada de método encadeados como resultado final. Podemos
+            sobrescrever os dados chamando o método OnModelCreating (modelbuilder).
+        </p>
+
+        <br>
+        <div class="box_img">
+            <app-card-projeto id="3" contentName="Classe Context" contentImg="assets/Image/ClassContext.png"
+                descriptionImg="Class_context">
+            </app-card-projeto>
+        </div>
+        <br>
+        <div id="caixa" class="space">
+            <h3 class="space">Configurações da Classe Program</h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Instanciando o uso da classe Context na program.
+                A Classe Program é a classe principal, onde instanciamos rotas, autenticações, autorizações, etc.
+                <br>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;Configurando serviços para a coleção de serviços:
+                <img src="" alt="">
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;Adicionando Cors ( Restrição de política de mesma origem)
+                <img src="" alt="">
+
+
+            </p>
+            <br>
+            <h4>Configurações de Serviços / Adicionando Cors / Adicionando JWT Bearer</h4>
+        </div>
+        <div class="box_img">
+            <app-card-projeto id="4" contentImg="assets/Image/Program.png"
+                contentName="Configurações na Classe Program">
+            </app-card-projeto>
+            <app-card-projeto id="5" contentImg="assets/Image/Program -2.png" contentName="(inclusão do:Cors/JwtBeare)">
+            </app-card-projeto>
+        </div>
+        <div id="caixa" class="space">
+            <h3>Migrations & Banco de Dados</h3>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Fazendo uso da ferramenta Entity Framework Tools, realizamos migração dos dados dos
+            objetos modelos (User, Book). O recurso de migração diponibilizado pela EFCore permite criar novas
+            entidades, propriedades, que podem ser adicionadas, atualizadas, ou removidas e os esquemas de banco de
+            dados que será utilizada pela aplicação de forma sincronizada com o modelo de dados da aplicação.
+
+        </p>
+        <br>
+        <div class="box_img">
+            <app-card-projeto id="6" contentName="Conteúdo Migration"
+                contentImg="assets/Image/Migration.png"></app-card-projeto>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; Modelo entidade User: após realizar a migração vemos pela imagem os dados com uso
+            de Data Annotations(anotações). Parâmetros imposto na classe modelo usuário, limitando a quantidade de
+            caracteres , tipo do dado, que será implementado no banco de dados.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;Modelo entidade Book: após realizar a migração, vemos os dados sendo
+            implementados sem o uso de Data Annotations, a própria ferramenta implanta o tipo de dados a ser
+            implementado no dados, porém vemos que não foi imposto um limite de valor de caracteres. ( Nesse caso não é
+            uma boa prática) Nesse caso você pode realizar atualização dos por meio da Fluent Api.
+        </p>
+        <div class="box_img">
+            <app-card-projeto id="7" contentImg="assets/Image/dbBook.png"
+                contentName="Entidade livro no Banco de Dados"></app-card-projeto>
+            <app-card-projeto id="8" contentName="Entidade Usuário no Banco de Dados"
+                contentImg="assets/Image/dbUser.png"></app-card-projeto>
+
+        </div>
+        <br>
+        <div id="caixa" class=" space">
+            <h3>Interfaces </h3>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Classe Interface: interface de visualização de dados referenciados (métodos CRUD
+            -Create/Read/Update/Delete).
+
+        </p>
+        <div class="box_img">
+            <app-card-projeto id="9" contentName="User Interface"
+                contentImg="assets/Image/UserInterface.png"></app-card-projeto>
+            <app-card-projeto id="10" contentName="Book Interface"
+                contentImg="assets/Image/bookInterface.png"></app-card-projeto>
+        </div>
+
+        <div id="caixa" class="space">
+            <br>
+            <h3> Repositórios </h3>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Camada responsável por trabalhar com a fonte de dados da aplicação , manipulação da
+            lógica de acesso dos dados que será chamado na program fazendo uso da interface. Por meio dessa classe que
+            se faz verificações dos dados consultados, existentes no banco de dados.
+
+        </p>
+        <br>
+
+        <div class="box_img">
+            <app-card-projeto id="11" contentName="User Repository "
+                contentImg="assets/Image/UserRepository.png"></app-card-projeto>
+            <app-card-projeto id="12" contentName="Book Repository" contentImg="assets/Image/BookRepository.png">
+            </app-card-projeto>
+        </div>
+        <div id="caixa" class="space">
+            <br>
+            <h3> Classes Controles</h3>
+        </div>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Controle de acesso a API por meio dos endpoints, realizando métodos para criar,
+            listar, atualizar, deletar dados de um objeto. O controle de acesso por meio dos endpoints é importante para
+            restringir o acesso a API. Nos Controladores se encontra a regra de negócio implementando a API a parte de
+            segurança por meio e autorizações e autenticações.
+
+        </p>
+        <br>
+        <div class="box_img">
+            <app-card-projeto id="13" contentName="User Controller "
+                contentImg="assets/Image/UserController.png"></app-card-projeto>
+            <app-card-projeto id="14" contentName="Book Controller" contentImg="assets/Image/BookController.png">
+            </app-card-projeto>
+        </div>
+        <div id="caixa" class="space">
+            <br>
+            <h3> Login View Model / Login Controller</h3>
+        </div>
+        <br>
+        <div class="box_img">
+            <app-card-projeto id="15" contentName="LoginViewModel"
+                contentImg="assets/Image/LoginViewModel.png"></app-card-projeto>
+            <app-card-projeto id="16" contentName="Login Controller" contentImg="assets/Image/LoginController.png">
+            </app-card-projeto>
+        </div>
+
+    </div>
+</section>
