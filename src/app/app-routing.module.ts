@@ -7,10 +7,8 @@ import { ProjetoComponent } from './views/projeto/projeto.component';
 import { SwaggerComponent } from './views/swagger/swagger.component';
 import { TestesComponent } from './views/testes/testes.component';
 
-//import { ContentComponent } from './views/projeto/Component/content/content.component';
 import { ContentSwaggerComponent } from './views/swagger/Component/content-swagger/content-swagger.component';
 import { ContentInsomniaComponent } from './views/insomnia/Component/content-insomnia/content-insomnia.component';
-import { ConteudoComponent } from './views/testes/Component/conteudo/conteudo.component';
 import { ContentProjetoComponent } from './views/projeto/Component/content-projeto/content-projeto.component';
 
 const routes: Routes = [
@@ -21,8 +19,7 @@ const routes: Routes = [
   { path: 'swagger/content-swagger/:id', component: ContentSwaggerComponent },
   { path: 'projeto', component: ProjetoComponent },
   { path: 'projeto/content-projeto/:id', component: ContentProjetoComponent },
-  { path: 'testes', component: TestesComponent },
-  { path: 'conteudo/:id', component: ConteudoComponent },
+  { path: 'testes', component: TestesComponent }
   // { path: '**', redirectTo: '' }
 ];
 

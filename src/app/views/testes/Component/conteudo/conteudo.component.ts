@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { data } from './data';
+import { Component, Input, OnInit } from '@angular/core';
+import { conteudo } from './conteudo';
+
+
+
 
 @Component({
   selector: 'app-conteudo',
@@ -9,27 +11,30 @@ import { data } from './data';
 })
 export class ConteudoComponent implements OnInit {
 
-  conteudoTitle: string = "";
+  @Input() id: string | null = "";
+
+  titulo: string = "";
+
   conteudoItemOne: string = "";
+
   conteudoItemTwo: string = "";
 
-  private id: string | null = "";
 
-  constructor(private router: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.router.paramMap.subscribe(value =>
-      this.id = value.get("id"))
-    this.setValueTeste(this.id);
+    conteudo.map(value =>
+      value.id == this.id)
+    this.setValueConteudo(this.id)
   }
-  setValueTeste(id: string | null) {
-    const resultado = data.filter(
+
+  setValueConteudo(id: string | null) {
+    const result = conteudo.filter(
       conteudo_teste => conteudo_teste.id == id)[0]
 
-    this.conteudoTitle = resultado.title
-    this.conteudoItemOne = resultado.itemOne
-    this.conteudoItemTwo = resultado.itemTwo
-
+    this.titulo = result.titulo
+    this.conteudoItemOne = result.itemOne
+    this.conteudoItemTwo = result.itemTwo
   }
 
 }

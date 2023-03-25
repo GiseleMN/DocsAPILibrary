@@ -1,0 +1,13 @@
+.tabela_doc {
+    width: 100%;
+    display: flex;
+}
+
+.item_doc {
+    width: 25%;
+    border: none;
+}
+
+.underline {
+    border-bottom: 1px solid #217582;
+}

@@ -35,7 +35,7 @@ export const data = [
         "name": "Put-return (User)",
         "img": "assets/Image/swagger/User/PutUserReturn.png",
         "descriptionImg": "Put_user_return",
-        "conteudoItem": "Nesta imagem podemos ver o retorno da atualização do usuário solitado "
+        "conteudoItem": "Nesta imagem podemos ver o retorno da atualização do usuário solicitado "
 
     },
     {
@@ -58,14 +58,14 @@ export const data = [
         "id": "8",
         // "title": "Imagens dos endpoint livro",
         "name": "Get (Book)",
-        "img": "assets/Image/swagger/User/GetBook.png",
+        "img": "assets/Image/swagger/Book/GetBook.png",
         "descriptionImg": "get_book_img",
         "conteudoItem": "Buscando livros:  nesse endpoint ele faz requisição de busca de todos os livros. "
     },
     {
         "id": "9",
         "name": "GetById (Book)",
-        "img": "assets/Image/swagger/User/getByIdBook.png",
+        "img": "assets/Image/swagger/Book/getByIdBook.png",
         "descriptionImg": "GetByIdBook_img",
         "conteudoItem": " Buscando um livro pelo seu Id: nesse endpoint de apenas um livro por meio da chave de autenticação. "
 
@@ -74,14 +74,14 @@ export const data = [
         "id": "10",
         // "title": "Imagens dos endpoint livro",
         "name": "Put (Book)",
-        "img": "assets/Image/swagger/User/PutBook.png",
+        "img": "assets/Image/swagger/Book/PutBook.png",
         "descriptionImg": "Put_Book_img",
         "conteudoItem": "Atualizando  cadastro de um livro: endpoint com a função de atualizar os dados de um livro cadastrado, fazendo a busca e atualizando os dados de acordo com a chave de identificação do livro cadastrado.        "
     },
     {
         "id": "11",
         "name": "Put-return (Book)",
-        "img": "assets/Image/swagger/User/PutReturnBook.png",
+        "img": "assets/Image/swagger/Book/PutReturnBook.png",
         "descriptionImg": "Put_book_return",
         "conteudoItem": "Imagem com o retorno da atualização realizada no livro solicitado. "
 
@@ -90,14 +90,14 @@ export const data = [
         "id": "12",
         // "title": "Imagens dos endpoint livro",
         "name": "Post (Book)",
-        "img": "assets/Image/swagger/User/PostBook.png",
+        "img": "assets/Image/swagger/Book/PostBook.png",
         "descriptionImg": "Post_Book_img",
         "conteudoItem": "Cadastrando um livro: nesse endpoint realiza o cadastro de um usuário."
     },
     {
         "id": "13",
         "name": "Delete (Book)",
-        "img": "assets/Image/swagger/User/DeleteBook.png",
+        "img": "assets/Image/swagger/Book/DeleteBook.png",
         "descriptionImg": "Delete_Book_img",
         "conteudoItem": "Deletando um livro cadastrado: nesse endpoint realiza a exclusão de um livro usando a chave primaria como meio de identificação do livro a ser deletado.   "
 

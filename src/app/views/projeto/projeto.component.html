@@ -98,9 +98,9 @@
             <h3>Desenvolvendo classe Entidade Livro e Usuário</h3>
         </div>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Os Objetos são classes que representam algo do mundo real, com suas propriedades.
+            Os Objetos são classes que representam algo do mundo real, com suas propriedades.
             Por exemplo :um usuário, um livro, um produto, etc.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Nesse projeto vemos dois objetos (Livro , Usuário), cada um com suas
+            <br>Nesse projeto vemos dois objetos (Livro , Usuário), cada um com suas
             propriedades ( dados ) para o desenvolvimento da aplicação.
         </p>
 
@@ -118,11 +118,10 @@
             <h3>Desenvolvendo Classe Context - Configuração para o banco de dados</h3>
         </div>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Configuração para o banco de dados, classe onde você estrutura as funcionalidades do
-            Entity Framework para o modelo de dados, nessa classe você configurar os dados para a Fluent Api.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;A Fluent Api serve para complementar ou substituir as convenções pré definidas
-            ou não, tendo como resultado final uma chamada de método encadeados como resultado final. Podemos
-            sobrescrever os dados chamando o método OnModelCreating (modelbuilder).
+            Classe Context, realizamos as configurações para o banco de dados, podemos também implementar a estrutura
+            para as funcionalidades do
+            Entity Framework para o modelo de dados, fazemos essa configuração dos dados fazendo uso da Fluent Api.
+
         </p>
 
         <br>
@@ -132,34 +131,27 @@
             </app-card-projeto>
         </div>
         <br>
-        <div id="caixa" class="space">
+        <div id="caixa">
             <h3 class="space">Configurações da Classe Program</h3>
             <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;Instanciando o uso da classe Context na program.
                 A Classe Program é a classe principal, onde instanciamos rotas, autenticações, autorizações, etc.
-                <br>
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;Configurando serviços para a coleção de serviços:
-                <img src="" alt="">
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;Adicionando Cors ( Restrição de política de mesma origem)
-                <img src="" alt="">
-
-
             </p>
             <br>
-            <h4>Configurações de Serviços / Adicionando Cors / Adicionando JWT Bearer</h4>
+            <h4>Configurações de Serviços / Adicionando Cors ( Restrição de política de mesma origem)/ Adicionando JWT
+                Bearer</h4>
         </div>
         <div class="box_img">
             <app-card-projeto id="4" contentImg="assets/Image/Program.png"
-                contentName="Configurações na Classe Program">
+                contentName="Classe Program /inclusão do:Cors">
             </app-card-projeto>
-            <app-card-projeto id="5" contentImg="assets/Image/Program -2.png" contentName="(inclusão do:Cors/JwtBeare)">
+            <app-card-projeto id="5" contentImg="assets/Image/Program -2.png" contentName="(JwtBeare / Swagger)">
             </app-card-projeto>
         </div>
         <div id="caixa" class="space">
             <h3>Migrations & Banco de Dados</h3>
         </div>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Fazendo uso da ferramenta Entity Framework Tools, realizamos migração dos dados dos
+            Fazendo uso da ferramenta Entity Framework Tools, realizamos migração dos dados dos
             objetos modelos (User, Book). O recurso de migração diponibilizado pela EFCore permite criar novas
             entidades, propriedades, que podem ser adicionadas, atualizadas, ou removidas e os esquemas de banco de
             dados que será utilizada pela aplicação de forma sincronizada com o modelo de dados da aplicação.
@@ -170,15 +162,7 @@
             <app-card-projeto id="6" contentName="Conteúdo Migration"
                 contentImg="assets/Image/Migration.png"></app-card-projeto>
         </div>
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp; Modelo entidade User: após realizar a migração vemos pela imagem os dados com uso
-            de Data Annotations(anotações). Parâmetros imposto na classe modelo usuário, limitando a quantidade de
-            caracteres , tipo do dado, que será implementado no banco de dados.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Modelo entidade Book: após realizar a migração, vemos os dados sendo
-            implementados sem o uso de Data Annotations, a própria ferramenta implanta o tipo de dados a ser
-            implementado no dados, porém vemos que não foi imposto um limite de valor de caracteres. ( Nesse caso não é
-            uma boa prática) Nesse caso você pode realizar atualização dos por meio da Fluent Api.
-        </p>
+
         <div class="box_img">
             <app-card-projeto id="7" contentImg="assets/Image/dbBook.png"
                 contentName="Entidade livro no Banco de Dados"></app-card-projeto>

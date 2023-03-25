@@ -1,0 +1,13 @@
+tr {
+    width: 100%;
+    display: flex;
+}
+
+.conteudo {
+    width: 50%;
+
+}
+
+.datas {
+    width: 25%;
+}

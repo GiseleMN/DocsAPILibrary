@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentTesteComponent } from './content-teste.component';
+import { ConteudoItensEightComponent } from './conteudo-itens-eight.component';
 
-describe('ContentTesteComponent', () => {
-  let component: ContentTesteComponent;
-  let fixture: ComponentFixture<ContentTesteComponent>;
+describe('ConteudoItensEightComponent', () => {
+  let component: ConteudoItensEightComponent;
+  let fixture: ComponentFixture<ConteudoItensEightComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContentTesteComponent ]
+      declarations: [ ConteudoItensEightComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContentTesteComponent);
+    fixture = TestBed.createComponent(ConteudoItensEightComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

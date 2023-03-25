@@ -1,31 +1,33 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { tabelas } from 'src/app/Data/teste';
+import { Component, OnInit, Input } from '@angular/core';
+import { tabelas } from './tables';
 
 @Component({
-  selector: 'app-tabela',
-  templateUrl: './tabela.component.html',
-  styleUrls: ['./tabela.component.css']
+  selector: 'app-tabela-content',
+  templateUrl: './tabela-content.component.html',
+  styleUrls: ['./tabela-content.component.css']
 })
-export class TabelaComponent implements OnInit {
+export class TabelaContentComponent implements OnInit {
 
+  @Input() id: string | null = "0";
   tableTitle: string = "";
+
   contentOne: string = "";
   contentOneLeft: string = "";
+
   contentTwo: string = "";
   contentTwoLeft: string = "";
+
   contentThree: string = "";
   contentThreeLeft: string = "";
+
   contentFour: string = "";
   contentFourLeft: string = "";
 
-  private id: string | null = "0";
-
-  constructor(private router: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.router.paramMap.subscribe(value =>
-      this.id = value.get("id"))
+    tabelas.map(value =>
+      value.id == this.id)
     this.SetValuesTable(this.id)
   }
 
@@ -33,7 +35,7 @@ export class TabelaComponent implements OnInit {
     const result = tabelas.filter(
       table_area => table_area.id == id)[0]
 
-    this.tableTitle = result.title
+    this.tableTitle = result.tableTitle
     this.contentOne = result.contentOne
     this.contentOneLeft = result.contentOneLeft
     this.contentTwo = result.contentTwo
@@ -42,7 +44,6 @@ export class TabelaComponent implements OnInit {
     this.contentThreeLeft = result.contentThreeLeft
     this.contentFour = result.contentFour
     this.contentFourLeft = result.contentFourLeft
-
   }
 
 }

@@ -18,10 +18,7 @@ import { CardSwaggerComponent } from './views/swagger/Component/card-swagger/car
 import { ContentSwaggerComponent } from './views/swagger/Component/content-swagger/content-swagger.component';
 import { SwaggerComponent } from './views/swagger/swagger.component';
 
-import { ContentTesteComponent } from './views/testes/Component/content-teste/content-teste.component';
-import { ConteudoComponent } from './views/testes/Component/conteudo/conteudo.component';
-import { TabelaComponent } from './views/testes/Component/tabela/tabela.component';
-import { TestesComponent } from './views/testes/testes.component';
+import { TesteModule } from './views/testes/teste.module';
 
 
 
@@ -42,18 +39,13 @@ import { TestesComponent } from './views/testes/testes.component';
 
     ProjetoComponent,
     CardProjetoComponent,
-    ContentProjetoComponent,
-
-    ContentTesteComponent,
-    TabelaComponent,
-    ConteudoComponent,
-    TestesComponent,
-
+    ContentProjetoComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    TesteModule,
 
 
   ],
