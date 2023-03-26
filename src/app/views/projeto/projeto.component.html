@@ -1,4 +1,4 @@
-<section class=" season_projeto">
+<section class=" season_projeto render_li">
     <div id="caixa" class="sob ">
         <div id="caixa" class="principal space">
             <h1 class="name" style="font-size: xx-large;">Projeto API - LibraryAPI</h1>
@@ -35,86 +35,74 @@
                 implementdo duas entidades para inserção de dados, sendo a classe de usuário(Users), e a classe de
                 livros( Book). Cada classe com suas propriedades específicas, sendo que :
             </p>
-            <br>
             <div class="space">
                 <h4>Dentro da classe usuário (User),terá as seguintes propriedades:</h4>
-                <ul>
-                    <li>UserId( identificador gerado pelo banco de dados)</li>
-                    <li>Propriedade email( email de cadastro para acesso)</li>
-                    <li>Propriedade Password ( senha do cadastro de acesso)</li>
-                </ul>
+
+                <app-li-bicolor id="1"></app-li-bicolor>
+                <app-li-bicolor id="2"></app-li-bicolor>
+                <app-li-bicolor id="3"></app-li-bicolor>
+
+                <br>
                 <h4>Dentro da classe livro (Book),terá as seguintes propriedades:</h4>
                 <ul>
-                    <li>BookId(identificador gerado pelo banco de dados)</li>
-                    <li>Propriedade Title ( Título do livro)</li>
-                    <li>Propriedade NumberOfPages ( Quantidade de páginas que o livro possui)</li>
-                    <li>Propriedade Availability ( verifica a disponibilidade do livro sim/não)</li>
+                    <app-li-bicolor id="4"></app-li-bicolor>
+                    <app-li-bicolor id="5"></app-li-bicolor>
+                    <app-li-bicolor id="6"></app-li-bicolor>
+                    <app-li-bicolor id="7"></app-li-bicolor>
                 </ul>
             </div>
         </div>
         <br>
         <div class="principal">
             <h3 class="name">Descrição de desenvolvimento do projeto</h3>
-            <br>
+
             <div class="space-button">
                 <h4>1 - Desenvolvimento da API - implementação de pacotes Nugget</h4>
-                <ul>
-                    <li> <span class="name">Microsoft Entity Framework Core</span> ( de forma explícita)
-                    </li>
-                    <li> <span class="name">Microsoft Entity Framework Core Design</span> (ferramenta para linha
-                        linha de comando multiplataforma)</li>
-                    <li> <span class="name">Microsoft Entity Framework Core SqlServer</span>(suporte ao banco de
-                        dados Sql Server)
-                    </li>
-                    <li> <span class="name">Microsoft Entity Framework Core Tools</span>( ferramenta para realização
-                        de migrações EF Core e engenharia scaffolding para banco de dados)
-                    </li>
-                </ul>
+
+                <app-li-bicolor id="8"></app-li-bicolor>
+                <app-li-bicolor id="9"></app-li-bicolor>
+                <app-li-bicolor id="10"></app-li-bicolor>
+                <app-li-bicolor id="11"></app-li-bicolor>
                 <br>
-                <ul>
-                    <li><span class="name">NuGet -</span>Pacotes do NuGet é um meio em que os desenvolvedores (empresas)
-                        podem criar código e compartilhar soluções para que outras pessoas utilizem.
-                    </li>
-                    <li><span class="name">Entity Framework -</span>é um framework ORM(Object Relational Mapping),
-                        criado
-                        para facilitar a integração com o banco de dados, mapeado tabelas e gerando comandos SQL de
-                        forma
-                        automática.
-                    </li>
-                </ul>
-            </div>
-            <div id="caixa">
-                <h4>Para mais informações: aperte na seta e acesse o link em cada item abaixo.</h4>
+                <app-li-bicolor id="12"></app-li-bicolor>
+                <app-li-bicolor id="13"></app-li-bicolor>
+
+
             </div>
 
-            <app-card-projeto id="17" contentName="Pacote de Nugget" contentImg="assets/Image/nugets.png"
+            <h3 class="name space sob">Para mais informações: aperte na seta e acesse o link em cada item abaixo.</h3>
+
+
+            <app-card-projeto id="17" contentName="Pacote de Nugget" contentImg="assets/Image/imgProjeto/nugets.png"
                 descriptionImg="img_nugget">
             </app-card-projeto>
 
 
         </div>
 
-        <div id="caixa" class=" space ">
+        <div class=" space sob ">
             <h3>Desenvolvendo classe Entidade Livro e Usuário</h3>
         </div>
         <p>
             Os Objetos são classes que representam algo do mundo real, com suas propriedades.
             Por exemplo :um usuário, um livro, um produto, etc.
-            <br>Nesse projeto vemos dois objetos (Livro , Usuário), cada um com suas
+        </p>
+        <p>
+            Nesse projeto vemos dois objetos (Livro , Usuário), cada um com suas
             propriedades ( dados ) para o desenvolvimento da aplicação.
         </p>
 
         <div class="box_img">
-            <app-card-projeto id="1" contentName="Classe usuário" contentImg="assets/Image/userEntity.png"
+            <app-card-projeto id="1" contentName="Classe usuário" contentImg="assets/Image/imgProjeto/userEntity.png"
                 descriptionImg="class_user_img">
             </app-card-projeto>
 
-            <app-card-projeto id="2" contentName="Classe Livro" contentImg="assets/Image/BookEntity.png"
+            <app-card-projeto id="2" contentName="Classe Livro" contentImg="assets/Image/imgProjeto/BookEntity.png"
                 descriptionImg2="class_book_img">
             </app-card-projeto>
 
         </div>
-        <div id="caixa" class="space">
+        <div class="space sob">
             <h3>Desenvolvendo Classe Context - Configuração para o banco de dados</h3>
         </div>
         <p>
@@ -124,30 +112,31 @@
 
         </p>
 
-        <br>
+
         <div class="box_img">
-            <app-card-projeto id="3" contentName="Classe Context" contentImg="assets/Image/ClassContext.png"
+            <app-card-projeto id="3" contentName="Classe Context" contentImg="assets/Image/imgProjeto/ClassContext.png"
                 descriptionImg="Class_context">
             </app-card-projeto>
         </div>
-        <br>
-        <div id="caixa">
+
+        <div class="sob">
             <h3 class="space">Configurações da Classe Program</h3>
             <p>
                 A Classe Program é a classe principal, onde instanciamos rotas, autenticações, autorizações, etc.
             </p>
-            <br>
+
             <h4>Configurações de Serviços / Adicionando Cors ( Restrição de política de mesma origem)/ Adicionando JWT
                 Bearer</h4>
         </div>
         <div class="box_img">
-            <app-card-projeto id="4" contentImg="assets/Image/Program.png"
+            <app-card-projeto id="4" contentImg="assets/Image/imgProjeto/Program.png"
                 contentName="Classe Program /inclusão do:Cors">
             </app-card-projeto>
-            <app-card-projeto id="5" contentImg="assets/Image/Program -2.png" contentName="(JwtBeare / Swagger)">
+            <app-card-projeto id="5" contentImg="assets/Image/imgProjeto/Program -2.png"
+                contentName="(JwtBeare / Swagger)">
             </app-card-projeto>
         </div>
-        <div id="caixa" class="space">
+        <div class="space sob">
             <h3>Migrations & Banco de Dados</h3>
         </div>
         <p>
@@ -160,38 +149,38 @@
         <br>
         <div class="box_img">
             <app-card-projeto id="6" contentName="Conteúdo Migration"
-                contentImg="assets/Image/Migration.png"></app-card-projeto>
+                contentImg="assets/Image/imgProjeto/Migration.png"></app-card-projeto>
         </div>
 
         <div class="box_img">
-            <app-card-projeto id="7" contentImg="assets/Image/dbBook.png"
+            <app-card-projeto id="7" contentImg="assets/Image/imgProjeto/dbBook.png"
                 contentName="Entidade livro no Banco de Dados"></app-card-projeto>
             <app-card-projeto id="8" contentName="Entidade Usuário no Banco de Dados"
-                contentImg="assets/Image/dbUser.png"></app-card-projeto>
+                contentImg="assets/Image/imgProjeto/dbUser.png"></app-card-projeto>
 
         </div>
         <br>
-        <div id="caixa" class=" space">
+        <div class=" space sob">
             <h3>Interfaces </h3>
         </div>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Classe Interface: interface de visualização de dados referenciados (métodos CRUD
+            Classe Interface: interface de visualização de dados referenciados (métodos CRUD
             -Create/Read/Update/Delete).
 
         </p>
         <div class="box_img">
             <app-card-projeto id="9" contentName="User Interface"
-                contentImg="assets/Image/UserInterface.png"></app-card-projeto>
+                contentImg="assets/Image/imgProjeto/UserInterface.png"></app-card-projeto>
             <app-card-projeto id="10" contentName="Book Interface"
-                contentImg="assets/Image/bookInterface.png"></app-card-projeto>
+                contentImg="assets/Image/imgProjeto/bookInterface.png"></app-card-projeto>
         </div>
 
-        <div id="caixa" class="space">
+        <div class="space sob">
             <br>
             <h3> Repositórios </h3>
         </div>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Camada responsável por trabalhar com a fonte de dados da aplicação , manipulação da
+            Camada responsável por trabalhar com a fonte de dados da aplicação , manipulação da
             lógica de acesso dos dados que será chamado na program fazendo uso da interface. Por meio dessa classe que
             se faz verificações dos dados consultados, existentes no banco de dados.
 
@@ -200,16 +189,17 @@
 
         <div class="box_img">
             <app-card-projeto id="11" contentName="User Repository "
-                contentImg="assets/Image/UserRepository.png"></app-card-projeto>
-            <app-card-projeto id="12" contentName="Book Repository" contentImg="assets/Image/BookRepository.png">
+                contentImg="assets/Image/imgProjeto/UserRepository.png"></app-card-projeto>
+            <app-card-projeto id="12" contentName="Book Repository"
+                contentImg="assets/Image/imgProjeto/BookRepository.png">
             </app-card-projeto>
         </div>
-        <div id="caixa" class="space">
+        <div class="space sob">
             <br>
             <h3> Classes Controles</h3>
         </div>
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Controle de acesso a API por meio dos endpoints, realizando métodos para criar,
+            Controle de acesso a API por meio dos endpoints, realizando métodos para criar,
             listar, atualizar, deletar dados de um objeto. O controle de acesso por meio dos endpoints é importante para
             restringir o acesso a API. Nos Controladores se encontra a regra de negócio implementando a API a parte de
             segurança por meio e autorizações e autenticações.
@@ -218,19 +208,21 @@
         <br>
         <div class="box_img">
             <app-card-projeto id="13" contentName="User Controller "
-                contentImg="assets/Image/UserController.png"></app-card-projeto>
-            <app-card-projeto id="14" contentName="Book Controller" contentImg="assets/Image/BookController.png">
+                contentImg="assets/Image/imgProjeto/UserController.png"></app-card-projeto>
+            <app-card-projeto id="14" contentName="Book Controller"
+                contentImg="assets/Image/imgProjeto/BookController.png">
             </app-card-projeto>
         </div>
-        <div id="caixa" class="space">
+        <div class="space sob">
             <br>
             <h3> Login View Model / Login Controller</h3>
         </div>
         <br>
         <div class="box_img">
             <app-card-projeto id="15" contentName="LoginViewModel"
-                contentImg="assets/Image/LoginViewModel.png"></app-card-projeto>
-            <app-card-projeto id="16" contentName="Login Controller" contentImg="assets/Image/LoginController.png">
+                contentImg="assets/Image/imgProjeto/LoginViewModel.png"></app-card-projeto>
+            <app-card-projeto id="16" contentName="Login Controller"
+                contentImg="assets/Image/imgProjeto/LoginController.png">
             </app-card-projeto>
         </div>
 

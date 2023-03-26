@@ -35,6 +35,7 @@ import { TabelaControleComponent } from './Component/tabela-controle/tabela-cont
         TabelaContentComponent,
         TabelaRequisitosComponent,
         ConteudoComponent,
+        TabelaControleComponent,
     ]
 
 })

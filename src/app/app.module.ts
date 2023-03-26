@@ -19,6 +19,9 @@ import { ContentSwaggerComponent } from './views/swagger/Component/content-swagg
 import { SwaggerComponent } from './views/swagger/swagger.component';
 
 import { TesteModule } from './views/testes/teste.module';
+import { TesteXUnitComponent } from './views/teste-xunit/teste-xunit.component';
+import { RenderLiComponent } from './views/projeto/Component/render-li/render-li.component';
+import { ContenComponent } from './views/teste-xunit/Component/conten/conten.component';
 
 
 
@@ -39,7 +42,10 @@ import { TesteModule } from './views/testes/teste.module';
 
     ProjetoComponent,
     CardProjetoComponent,
-    ContentProjetoComponent
+    ContentProjetoComponent,
+    TesteXUnitComponent,
+    RenderLiComponent,
+    ContenComponent
 
   ],
   imports: [
