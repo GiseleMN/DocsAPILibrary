@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -18,10 +19,8 @@ import { CardSwaggerComponent } from './views/swagger/Component/card-swagger/car
 import { ContentSwaggerComponent } from './views/swagger/Component/content-swagger/content-swagger.component';
 import { SwaggerComponent } from './views/swagger/swagger.component';
 
-import { TesteModule } from './views/testes/teste.module';
-import { TesteXUnitComponent } from './views/teste-xunit/teste-xunit.component';
 import { RenderLiComponent } from './views/projeto/Component/render-li/render-li.component';
-import { ContenComponent } from './views/teste-xunit/Component/conten/conten.component';
+
 
 
 
@@ -43,15 +42,16 @@ import { ContenComponent } from './views/teste-xunit/Component/conten/conten.com
     ProjetoComponent,
     CardProjetoComponent,
     ContentProjetoComponent,
-    TesteXUnitComponent,
+
     RenderLiComponent,
-    ContenComponent
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TesteModule,
+
+
 
 
   ],
