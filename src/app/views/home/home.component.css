@@ -11,3 +11,10 @@
     position: static;
     z-index: 2;
 }
+
+@media (max-width: 800px) {
+    .logo {
+        width: 70%;
+        height: 70%;
+    }
+}

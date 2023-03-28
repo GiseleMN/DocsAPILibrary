@@ -8,3 +8,10 @@
     transition: 2s;
     transform: scale(2.2);
 }
+
+@media screen and (max-width:800px) {
+    .img-postagem:hover {
+        transition: 2s;
+        transform: scale(1.5);
+    }
+}
